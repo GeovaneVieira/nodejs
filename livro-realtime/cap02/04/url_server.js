@@ -10,7 +10,7 @@ var server = http.createServer(function(request, response) {
     for (var key in result.query) {
         response.write("<h2>" + key +": " + result.query[key] + "</h2>");
     }
-    console.log(result);
+    response.write("<h2>Protocolo: " + result.protocol + "</h2>");
 
 
     response.end();
